@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/elementui.css">
+    <title>Transaction</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="app">
+            <el-button type="primary" @click="jimu">积木</el-button>
+            <el-button type="primary" @click="jiaoyi">交易</el-button>
+            <el-table :data="showtx">
+                    <el-table-column prop="txhash" label="交易hash">
+                            <template slot-scope="scope">
+                                    <a :href="'ByTxHash.html?txhash=' +scope.row.txhash">{{scope.row.txhash}}
+                                    </a>
+                                </template>
+                    </el-table-column>
+                <el-table-column prop="showtime" label="时间">
+                </el-table-column>
+                <el-table-column prop="amount" label="Amount">
+                </el-table-column>
+                <el-table-column prop="amount" label="总额">
+                </el-table-column>
+            </el-table>
+        </div>
+    </div>
+    <script src="./assets/js/axios.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/elementui.js"></script>
+    <script src="./viewmodels/Transaction.js"></script>
+</body>
+
+</html>

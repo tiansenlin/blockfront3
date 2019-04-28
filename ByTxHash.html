@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/elementui.css">
+    <title>Demo</title>
+</head>
+
+<body>
+    <div id="app">
+         
+                    <h1>Txhash #{{showTx[0].txhash}}</h1>  <br>
+        
+                    txid:	{{showTx[0].txid}} <br>
+                    txhash:	{{showTx[0].txhash}} <br>
+                    size：	{{showTx[0].size}} <br>
+                    weight：	{{showTx[0].weight}} <br>
+                    Size：	{{showTx[0].sizeOnDisk}} <br>
+                    time：	{{showTx[0].time}} <br>
+                    totalInput： 	{{showTx[0].totalInput}} <br>
+                    totalOutput：	{{showTx[0].totalOutput}}<br>
+                    fees： {{showTx[0].fees}} <br>
+                    txDetails： {{showTx[0].txDetails}} <br>
+          
+
+        
+    </div>
+    <script src="./assets/js/axios.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/elementui.js"></script>
+    <script src="./viewmodels/ByTxHash.js"></script>
+</body>
+
+</html>
